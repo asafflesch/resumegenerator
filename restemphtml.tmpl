@@ -1,0 +1,34 @@
+#filter HFilter
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Resume of $name</title>
+	<script type="text/javascript" src="spamspan.js"></script>
+</head>
+<body>
+	<div style = "text-align: center;">
+		<h1>$name</h1>
+	</div>
+	$contactInfo
+	#for $category in $categories
+	<h2>$category.name</h2>
+	<hr>
+		#if $category.type == "multiple"
+		<ul>
+			#for $item in $category.items
+			<li>
+				#if $item.title
+				<strong> $item.title</strong>, $item.text
+				#else
+				$item.text
+				#end if
+			</li>
+			#end for
+		</ul>
+		#else
+		$category.content
+		#end if
+	#end for
+</body>
+</html>
+#end filter
