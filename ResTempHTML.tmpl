@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Resume of $name</title>
+</head>
+<body>
+	<h1>$name</h1>
+	<br>
+	$contactInfo.misc
+	<br>
+	$contactInfo.email
+	</br>
+	#for $category in $categories
+	<h3>$category.name</h3>
+	<hr>
+		#if $category.type == "multiple"
+		<ul>
+			#for $item in $category.items
+			<li>
+				#if $item.title
+				<h5> $item.title</h5><br>
+				#endif
+				#filter HFILTER
+				$item.content
+				#filter FILTER
+			</li>
+			#end for
+		</ul>
+		#else
+		#filter HFILTER
+		$category.content
+		#filter FILTER
+		#end if
+	<br>
+	#end for
+</body>
+</html>

@@ -1,0 +1,113 @@
+<Resume>
+	<Name>
+		Asaf Flescher
+	</Name>
+	<ContactInfo>
+		<Misc>
+			Hageula 6 Apt 21 {cr}
+			Hod Hasharon {cr}
+			Israel {cr}
+			0547573501 {cr}
+		</Misc>
+		<Email>
+			asafflesch@gmail.com
+		</Email>
+	</ContactInfo>
+	<Categories>
+		<Category>
+			<Name>Education</Name>
+			<Items>
+				<Item>
+					<Title>Ben Gurion University </Title>
+					<Text> Bachelor's in Computer Science, expected graduation 2014. </Text>
+				</Item>
+				<Item>
+					<Title>IDF Programming Course </Title>
+					<Text> August 2004 - Feb 2005. </Text>
+				</Item>
+			</Items>
+		</Category>
+		<Category>
+			<Name>Languages</Name>
+			<Items>
+				<Item>
+					<Text> .NET platform up to version 3.5, mainly C# </Text>
+				</Item>
+				<Item>
+					<Text> C, Python </Text>
+				</Item>
+				<Item>
+					<Text> ASP, ASP.NET (1.1/2.0), Javascript </Text>
+				</Item>
+				<Item>
+					<Text> Scheme </Text>
+				</Item>
+			</Items>
+		</Category>
+
+		<Category>
+			<Name>Other Skills</Name>
+			<Items>
+				<Item>
+					<Text> Comfortable in both Linux and Windows environments </Text>
+				</Item>
+				<Item>
+					<Text> Wordpress back-end </Text>
+				</Item>
+				<Item>
+					<Text> LaTex </Text>
+				</Item>
+				<Item>
+					<Text> Native command of both English and Hebrew </Text>
+				</Item>
+			</Items>
+		</Category>
+		<Category>
+			<Name>Experience</Name>
+			<Items>
+				<Item>
+					<Title>Simulation Programmer</Title>
+					<Text>
+						Ben Gurion University (March 2012 -- April 2013) {cr} 
+						Part-time job writing a virtual reality simulation for the Psychology department
+					</Text>
+				</Item>
+				<Item>
+					<Title>Programmer </Title>
+					<Text>
+						IDF, Military Intelligence {cr} (March 2005 - September 2010)						
+						{list}
+							{item} Maintained a variety of organizational websites, culminating in a re-design of a central portal. {\item}
+							{item} Technical support of mission-critical systems. {\item}
+							{item} Technical lead on several systems for inter-organizational data delivery {\item}
+							{item} Participated in from-scratch creation of SOA-oriented system to centralize said data delivery. Was involved on levels of high-level architecture, software design and implementation. Introduced elements of TDD and automated documentation.{\item}
+						{/list}
+					</Text>
+				</Item>
+				<Item>
+					<Title>Technical Support </Title>
+					<Text>
+						Israeli Organization for Science Fiction And Fantasy {cr} Volunteer work during IDF service. 
+						{list}
+							{item} Supervised transfer of several websites between webhosts. {\item}
+							{item} Centralized organizational contacts in a central forum, and information in a central wiki. {\item}
+							{item Point of contact on technical matters in relation to websites. {\item}
+						{\list}
+					</Text>
+				</Item>
+			</Items>
+		</Category>
+		<Category>
+			<Name>Statement</Name>
+			<Text>
+				I'm trying to make the world a cooler place. Technology is the best way to faciliate that. In my own corner of it, I try to value professionalism, above all in knowing how things work and making sure I can explain them to others. 
+			</Text>
+		</Category>
+		<Category>
+			<Name>Portfolio</Name>
+			<Text>
+				https://bitbucket.org/Faqa (School projects, since most of my professional work was not conducted in an internet-based environment)
+			</Text>
+		</Category>
+	</Categories>
+</Resume>
