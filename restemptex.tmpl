@@ -1,0 +1,62 @@
+#filter LFilter
+\documentclass{resume}
+
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+%
+%
+\setlength{\topmargin}{-0.5in}
+%
+%
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+\author{$name}
+% ------ Address --------------------------------------------------------
+
+\address{$contactInfo}
+	
+\begin{document}
+\maketitle
+
+#for $category in $categories
+	\begin{category}{$category.name}
+		#if $category.type == "multiple"
+			#for $item in $category.items		
+				#if $item.title
+				\citem{$item.title},
+				#else
+				\citembullet 
+				#end if
+				$item.text
+			#end for
+		#else
+			\citemnobullet{$category.content}
+		#end if
+	\end{category}
+#end for
+
+\end{document}
+#end filter
