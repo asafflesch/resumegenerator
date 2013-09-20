@@ -1,3 +1,4 @@
+#filter LFilter
 \documentclass{resume}
 
 \renewcommand{\categoryfont}{\sc}
@@ -49,16 +50,13 @@
 				#else
 				\citembullet 
 				#end if
-				#filter LFILTER
-				$item.content
-				#filter FILTER
+				$item.text
 			#end for
 		#else
-			#filter LFILTER
 			\citemnobullet{$category.content)
-			#filter FILTER
 		#end if
 	\end{category}
 #end for
 
 \end{document}
+#end filter

@@ -1,5 +1,6 @@
 from Cheetah.Template import Template
 import xml.etree.ElementTree as ET
+import MyFilters
 
 class ContactInfo(object):
 	def __init__(self):
@@ -13,7 +14,7 @@ class Category(object):
 		self.items = []
 		self.content = ""
 
-class Item(object):
+class CatItem(object):
 	def __init__(self):
 		self.title = ""
 		self.text = ""
@@ -45,15 +46,19 @@ if __name__ == '__main__':
 			newCat.type = "multiple"
 			newCat.items = []
 			for item in category.iter("Item"):
-				newItem = Item()
+				newItem = CatItem()
 
 				if (item.find("Title") <> None):
 					newItem.title = item.find("Title").text
 
 				newItem.text = item.find("Text").text
-				newCat.items.append(item)
+				
+				newCat.items.append(newItem)
 
 		categories.append(newCat)
 
 	searchList["categories"] = categories
+
+	htmltemplate = Template(file="ResTempHTML.tmpl", searchList = searchList, filtersLib = MyFilters)
+	latextemplate = Template(file="ResTempTex.tmpl", searchList = searchList, filtersLib = MyFilters)
 	
