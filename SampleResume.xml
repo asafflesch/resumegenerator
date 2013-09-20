@@ -1,0 +1,96 @@
+<Resume>
+	<Name>
+		Dr. Horrible
+	</Name>
+	<ContactInfo>
+			<PublicInfo>
+				Dr. Horrible {cr}
+				{link} http://www.doctorhorrible.net/ {\link} {cr}
+				{email} drho@eloe.evil {\email}
+			</PublicInfo>
+			<PrivateInfo>
+				Billy Buddy
+			</PrivateInfo>
+	</ContactInfo>
+	<Categories>
+		<Category>
+			<Name>Education</Name>
+			<Items>
+				<Item>
+					<Title>Columbia</Title>
+					<Text> Bachelor's in Information Studies</Text>
+				</Item>
+				<Item>
+					<Title>University Of Tesla</Title>
+					<Text> PhD in Horribleness </Text>
+				</Item>
+			</Items>
+		</Category>
+		<Category>
+			<Name>Evil Skills</Name>
+			<Items>
+				<Item>
+					<Text>Freezing technology</Text>
+				</Item>
+				<Item>
+					<Text>Auto-drive systems</Text>
+				</Item>
+				<Item>
+					<Text>Murder Most Foul (ELOE Certification) </Text>
+				</Item>
+				<Item>
+					<Text> Aggressive Interrogation Methods, Psychological </Text>
+				</Item>
+			</Items>
+		</Category>
+		<Category>
+			<Name>Other Skills</Name>
+			<Items>
+				<Item>
+					<Text> Video art</Text>
+				</Item>
+				<Item>
+					<Text> Singing </Text>
+				</Item>
+				<Item>
+					<Text> Impeccable dress sense</Text>
+				</Item>
+			</Items>
+		</Category>
+		<Category>
+			<Name>Experience</Name>
+			<Items>
+				<Item>
+					<Title>Evil League Of Evil</Title>
+					<Text>Member in good standing (2008 -- Present) {cr} Oversaw League financial expansion and improved bank-robbing methods. Currently attempting to expand ELOE's Evil Science program to include necromancery </Text>
+				</Item>
+				<Item>
+					<Title>Independent Evil Contractor </Title>
+					<Text>
+						Location ELOE Classified {cr} (1988 - 2008) {cr} Took on various Evil contracts before ascending to ELOE, most notable jobs included:						
+						{list}
+							{item} While in High School, spread mind-altering toxins within school building. Foiled by former Hero, Captain Hammer {\item}
+							{item} Attempted to hold Dean's Office for ransom in college. Foiled by registered sidekick Johnny Snow and former Hero, Captain Hammer{\item}
+							{item} Successful heist of VERY VALUABLE wonderflonium convoy. NOT foiled by Captain Hammer, despite attempts {\item}
+							{item} Successfully defeated Captain Hammer in duel in front of entire city while causing carnage deemed by ELOE Director Bad Horse to be "upsetting and malicious to point of True Evil". Hammer resigned in disgrace from Hero League shortly afterwards and has not been seen since in public outside of mental health facilities{\item}
+						{\list}
+					</Text>
+				</Item>
+			</Items>
+		</Category>
+		<Category>
+			<Name>Statement</Name>
+			<Text>
+				The fish rots from the head as they say. So my thinking is why not cut off the head?
+				{cr} {cr}
+				(The head is society. In case that's not clear. Which it should be. Because cutting off the head of society is evil. Which I am.)
+			</Text>
+		</Category>
+		<Category>
+			<Name>Portfolio</Name>
+			<Text>
+				{link} http://drhorrible.com/ {\link} 
+			</Text>
+		</Category>
+	</Categories>
+</Resume>
