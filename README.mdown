@@ -4,8 +4,11 @@ Python script that takes a resume in a pre-defined XML format (sample resume fil
 Content of resume (within XML) can have a few very simple tags using curly brackets. All tags MUST be closed.
 
 {list} - Represents a list of items
+
 {item} - Represents an item within a list
+
 {cr} - Carriage return
+
 {link} - Content of tag is treated as URL. In HTML output, for example, the content would be turned into an <a> tag.
 
 {email} Content of tag is treated as a sensitive email. In HTML output it will be turned into a mailto link protected by spamspan code (www.spanspam.com).
